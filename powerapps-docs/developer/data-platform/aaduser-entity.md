@@ -20,7 +20,7 @@ search.audienceType:
 Microsoft Dataverse includes a virtual table named Microsoft Entra Identity (aaduser). This virtual table provides a connection to Microsoft Entra ID and returns data about users within your Entra ID organization. No virtual table configuration is required to use the functionality. This is an online only feature.
 
 > [!NOTE]
-> Your results with AAD User may differ depending on where it is being used. AAD User in Dataverse will provide the full list of users on the Azure AD for the organization. AAD User in Dataverse for Teams is limited to providing all AAD Users who are also a member of the Team.
+> Your results with Microsoft Entra Identity may differ depending on where it is being used. Microsoft Entra Identity in Dataverse will provide the full list of users on the Entra ID for the organization. Microsoft Entra Identity in Dataverse for Teams is limited to providing all Entra ID who are also a member of the Team.
 > 
 > Microsoft Entra Identity does not return groups or distribution lists.
 
@@ -44,7 +44,7 @@ This section contains `HTTP` `GET` examples for accessing data from the Microsof
 
 ### Retrieving data
 
-The following example demonstrate retrieving data from the AADUser table.
+The following example demonstrate retrieving data from the Microsoft Entra Identity table.
 
 **Retrieve all Microsoft Entra Identity table rows**
 
@@ -106,7 +106,7 @@ https://[Organization URI].crm.dynamics.com/api/data/v9.1/aadusers(<user ID>)?$e
 
 The following example demonstrates referencing a Microsoft Entra Identity table row.
 
-**Set lookup field value referencing an AADUser row**  
+**Set lookup field value referencing a Microsoft Entra Identity row**  
 
 In this example `new_testaaduserId` is the single-valued navigation property created with a custom 1:N relationship between Microsoft Entra Identity and Account entity.  The name of this navigation property is defined in the  <xref:Microsoft.Xrm.Sdk.Metadata.OneToManyRelationshipMetadata.ReferencingEntityNavigationPropertyName?text=OneToManyRelationshipMetadata.ReferencingEntityNavigationPropertyName> property of the relationship. More information: [Single-valued navigation properties](webapi/web-api-navigation-properties.md#single-valued-navigation-properties)
 
