@@ -12,7 +12,7 @@ ms.author: "nhelgren" # MSFT alias of Microsoft employees only
 search.audienceType: 
   - developer
 ---
-# Azure Active Directory user table
+# Microsoft Entra Identity user table
 
 > [!NOTE]
 > Azure Active Directory is now Microsoft Entra ID. [Learn more](/azure/active-directory/fundamentals/new-name)
